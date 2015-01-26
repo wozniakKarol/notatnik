@@ -1,0 +1,28 @@
+<% if signed_in? %>
+  <div class="row">
+    <aside class="span4">
+      <section>
+        <%= render 'shared/user_info' %>
+      </section>
+      <section>
+        <%= render 'shared/micropost_form' %>
+      </section>
+    </aside>
+    <div class="span8">
+      <h3>Post</h3>
+      <%= render 'shared/feed' %>
+    </div>
+  </div>
+<% else %>
+<div class="center hero-unit">
+  <h1>Witaj w Notes App</h1>
+
+  <h2>
+    To strona domowa aplikacji Notes App.
+  </h2>
+
+  <%= link_to "Zarejestruj się!", signup_path, class: "btn btn-large btn-primary" %>
+</div>
+<% end %>
+
+
