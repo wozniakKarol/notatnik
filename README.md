@@ -1,2 +1,2 @@
-# Ruby on Rails Tutorial: notes application
+# Ruby on Rails : Note app
 
